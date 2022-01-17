@@ -1,0 +1,55 @@
+@charset "utf-8";
+// css 컴파일하는 목적이 html에서 css파일을 호출하려고.
+// scss 파일은 브라우저가 인식을 못하고, css파일만 인식이 가능하기 때문이다.
+// common.scss파일은 html에서 호출하지않기에 css파일을 민들지 않아도 된다. 그래서 파일 시작부분에 언더바를 붙인다. 
+
+@font-face {
+    font-family: 'Binggrae';
+    src: url(../font/BinggraeA1.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Binggrae-Bold';
+    src: url(../font/Binggrae-BoldA1.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url(../font/NotoSansKR-Regular-Alphabetic.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h5, figure, p{margin: 0;}
+a{text-decoration: none; margin: 0; padding: 0;}
+ul, li{list-style-type: none; margin: 0; padding: 0;}
+img{vertical-align: middle;}
+table{border-collapse: collapse;}
+
+$p-tb100: 100px 0;
+
+@mixin flex($jc,$ai,$fd,$fw){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+}
+

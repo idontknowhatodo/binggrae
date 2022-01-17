@@ -1,0 +1,10 @@
+{
+    "mainvisual":[
+        {"type":"커피/음료", "src":"../img/v1_coffee.png", "txt":"coffee beverage"},
+        {"type":"아이스크림", "src":"../img/v2_icecream.png", "txt":"ice cream"},
+        {"type":"우유/가공유", "src":"../img/v3_milk.png", "txt":"milk drink"},
+        {"type":"발효유", "src":"../img/v4_fermented.png", "txt":"fermented milk"},
+        {"type":"수출제품", "src":"../img/v5_export.png", "txt":"export product"},
+        {"type":"스낵/디저트", "src":"../img/v6_snack.png", "txt":"snack dessert"}
+    ]
+}
