@@ -13,9 +13,14 @@
     <title>빙그레</title>
     <link href="css/index.css" rel="stylesheet">
     <link href="favicon/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="js/common.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--제이쿼리-->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!--swiper slides-->
+
+    <script defer src="js/common.js"></script> <!--js code-->
+    <script defer src="swiper-default/swiper.js"></script> <!--swiper slides js code-->
 </head>
 
 <body>
@@ -89,29 +94,162 @@
                 <p>since 1967</p>
                 <h2>맛의 기준을 <b>만들다</b></h2>
                 <p>50년의 정직함을 담은 빙그레의 맛으로<br>또 다른 50년을 만들어 갑니다.</p>
-                <div class="productbtn">
-                    <button type="button">바나나맛<br>우유</button>
-                    <button type="button">투게더</button>
-                    <button type="button">메로나</button>
-                    <button type="button">요플레</button>
-                    <button type="button">꽃게랑</button>
+                <div class="productbtns"> 
+                    <button type="button" class="btn">바나나<br>우유</button> <!--tab title-->
+                    <button type="button" class="btn">투게더</button> 
+                    <button type="button" class="btn">메로나</button>
+                    <button type="button" class="btn">요플레</button>
+                    <button type="button" class="btn">꽃게랑</button>
                 </div>
-                <div class="banana">
-                    <!-- 슬라이드 -->
-                    <p>19 &nbsp; 74</p>
-                    <img src="img/banana1974.png" alt="1974">
-                    <!--                     
-                    <img src="img/banana1990.png" alt="1990">
-                    <img src="img/banana1991.png" alt="1991">
-                    <img src="img/banana1998.png" alt="1998">
-                    <img src="img/banana2016.png" alt="2016"> 
-                    -->
+                
+                <!--tab contents-->
+                <!--바나나맛우유 클릭시 슬라이드-->
+                <div class="product1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 74</p>
+                            <img src="img/banana1974.png" alt="1974">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 90</p>
+                            <img src="img/banana1990.png" alt="1990">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 91</p>
+                            <img src="img/banana1991.png" alt="1991">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 98</p>
+                            <img src="img/banana1998.png" alt="1998">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 16</p>
+                            <img src="img/banana2016.png" alt="2016">
+                        </div>
+                    </div>
+                    <div class="producttxt">
+                        <p>바나나맛우유</p>
+                        <p>since 1974</p>
+                        <p>마음까지 든든하게 채우는 최고의 달콤한 맛</p>
+                    </div>
                 </div>
-                <div class="bananatxt">
-                    <p>바나나맛우유</p>
-                    <p>since 1974</p>
-                    <p>마음까지 든든하게 채우는 최고의 달콤한 맛</p>
+                <div class="product2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 74</p>
+                            <img src="img/together1974.png" alt="1974">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 98</p>
+                            <img src="img/together1998.png" alt="1998">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 04</p>
+                            <img src="img/together2004.png" alt="2004">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 10</p>
+                            <img src="img/together2010.png" alt="2010">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 18</p>
+                            <img src="img/together2018.png" alt="2018">
+                        </div>
+                    </div>
+                    <div class="producttxt">
+                        <p>투게더</p>
+                        <p>since 1974</p>
+                        <p>온 가족이 함께 즐겨온 신선한 우유의 풍부하고 깊은 맛</p>
+                    </div>
                 </div>
+                <div class="product3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 74</p>
+                            <img src="img/melona1992.png" alt="1992">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 98</p>
+                            <img src="img/melona1998.png" alt="1998">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 04</p>
+                            <img src="img/melona2003.png" alt="2003">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 10</p>
+                            <img src="img/melona2011.png" alt="2011">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 18</p>
+                            <img src="img/melona2015.png" alt="2015">
+                        </div>
+                    </div>
+                    <div class="producttxt">
+                        <p>메로나</p>
+                        <p>since 1992</p>
+                        <p>상큼한 멜론향이 가득한 쫀득하고 달달한 맛</p>
+                    </div>
+                </div>
+                <div class="product4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 74</p>
+                            <img src="img/yogurt1983.png" alt="1983">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 98</p>
+                            <img src="img/yogurt1994.png" alt="1994">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 04</p>
+                            <img src="img/yogurt2003.png" alt="2003">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 10</p>
+                            <img src="img/yogurt2017.png" alt="2017">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 18</p>
+                            <img src="img/yogurt2018.png" alt="2018">
+                        </div>
+                    </div>
+                    <div class="producttxt">
+                        <p>요플레</p>
+                        <p>since 1992</p>
+                        <p>신선한 원유와 상큼한 과일이 어우러진 새콤달콤한 맛</p>
+                    </div>
+                </div>
+                <div class="product5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 74</p>
+                            <img src="img/crab1986.png" alt="1986">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>19 &nbsp; 98</p>
+                            <img src="img/crab1998.png" alt="1998">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 04</p>
+                            <img src="img/crab2001.png" alt="2001">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 10</p>
+                            <img src="img/crab2011.png" alt="2011">
+                        </div>
+                        <div class="swiper-slide">
+                            <p>20 &nbsp; 18</p>
+                            <img src="img/crab2015.png" alt="2015">
+                        </div>
+                    </div>
+                    <div class="producttxt">
+                        <p>꽃게랑</p>
+                        <p>since 1986</p>
+                        <p>기름에 튀기지 않고 가열소금에서 구워 더 바삭하고 담백한 맛</p>
+                    </div>
+                </div>
+
             </div>
 
             <div class="pr">
@@ -121,43 +259,43 @@
                     <p>전 세대가 함께 즐기는 빙그레의 생생한 이야기를 만나보세요.</p>
                 </div>
                 <div class="slide_box">
-                    <ul class="slide_wrap">
-                        <li>
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
                             <img src="img/pr1.jpg" alt="pr1">
                             <div class="prtxt2">
                                 <h4>사회공헌</h4>
                                 <p>빙그레의 기업이념이 담긴 '빙그레 글꼴'</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <img src="img/pr2.jpg" alt="pr2">
                             <div class="prtxt2">
                                 <h4>보도자료</h4>
                                 <p>빙그레 바나나맛우유, 임인년 새해맞이 '어흥 에디션' 출시</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <img src="img/pr3.jpg" alt="pr3">
                             <div class="prtxt2">
                                 <h4>글로벌 빙그레</h4>
                                 <p>초록빛 상큼한 멜론의 맛 '메로나'</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <img src="img/pr4.jpg" alt="pr4">
                             <div class="prtxt2">
                                 <h4>빙그레 영상</h4>
                                 <p>투게더 21년도 광고 (6월 호국보훈의 달 ver.)</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <img src="img/pr5.jpg" alt="pr5">
                             <div class="prtxt2">
                                 <h4>사회공헌</h4>
                                 <p>편안한 보금자리의 나눔 '헤비타트'</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <img src="img/pr1.jpg" alt="pr1">
                             <div class="prtxt2">
                                 <h4>사회공헌</h4>
@@ -166,13 +304,6 @@
                         </li>
                     </ul>
                     </div>
-                    <!-- 
-                    <img src="img/pr2.jpg" alt="pr2">
-                    <img src="img/pr3.jpg" alt="pr3">
-                    <img src="img/pr4.jpg" alt="pr4">
-                    <img src="img/pr5.jpg" alt="pr5">
-                    -->
-                
                 <span>01</span><span>/05</span>
             </div>
         </div>

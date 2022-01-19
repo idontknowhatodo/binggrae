@@ -18,31 +18,29 @@ elBtnhidden.onclick = function(){
     elBurgermenu.classList.remove('active');
 }
 
-//slide1
 
 
-//slide2 product
+
+
 
 
 //slide3 pr
-const elUl = document.querySelector('.slide_wrap');
-
-function move(){
-    let imgIndex = 0;
-
-    setInterval(function(){
-        elUl.style.transition = '0.5s';
-        elUl.style.transform = "translate(-"+275*(imgIndex+1)+"px,0px)";
-
-        imgIndex++;
-
-        if(imgIndex === 4){
-            imgIndex = -1;
-        }
-    },2000);
-}
-document.addEventListener("DOMContentLoaded",function(){
-    move();
-});
+// const elUl = document.querySelector('.slide_wrap');
+// const elLi = document.querySelectorAll('.slide_wrap li');
+// let imgIndex = 0; //0,1,2,3,4
+// //console.log(elLi[0].offsetWidth);
+// function move(){
+//     setInterval(function(){
+//         elUl.style.transition = '0.5s';
+//         elUl.style.transform = "translate(-"+(elLi[0].offsetWidth*(imgIndex+1)+60)+"px,0px)";
+//         imgIndex++;
+//         if(imgIndex === 4){
+//             imgIndex = -1;
+//         }
+//     },2000);
+// }
+// document.addEventListener("DOMContentLoaded",function(){
+//     move();
+// });
 
 

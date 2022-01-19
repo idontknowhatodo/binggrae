@@ -125,8 +125,9 @@ main{
                     right: 1%; bottom: 5%;
                     color: #ffda14;
                     font-family: 'Binggrae-Bold';
-                    font-size: 50px;
-                    line-height: 60px;
+                    font-size: 10.625vw;
+                    font-weight: 700;
+                    line-height: 10.4687vw;
                     letter-spacing: -0.07em;
                     text-align: right;
                     text-transform: capitalize;
@@ -158,6 +159,7 @@ main{
             width: 100%;
             text-align: center;
             background: #e9e9e9;
+            overflow: hidden;
             p:nth-of-type(1){
                 padding-top: 4%;
                 font-family: 'Binggrae-Bold';
@@ -181,65 +183,271 @@ main{
                 color: #222222;
                 margin-top: 1%;
             }
-            .productbtn{
-                width: 360px;
-                height: 16.45vw;
-                button{
+            .productbtns{
+                width: 100%;
+                height: 16vw;
+                margin: 5% 0;
+                .btn{
+                    display: inline-block;
                     width: 16.25vw;
                     height: 16.25vw;
-                    margin: 5% 1%;
+                    margin: 0 1%;
                     color: #888;
                     background: #e9e9e9;
                     border: 1px solid #ccc;
                     border-radius: 50%;
                     font-family: 'NotoSansKR';
-                    font-size: 1.5rem;
+                    font-size: 3.5937vw;
+                    vertical-align: middle;
+                }
+                .btn.active{
+                    background: #0b8249;
                 }
             }
-            .banana{
-                position: relative;
-                padding: 8% 0;
-                p{
-                    font-family: 'Binggrae';
-                    font-size: 13rem;
-                    font-weight: 700;
-                    letter-spacing: -0.5rem;
-                    color: #0b8249;
-                    display: inline-block;
+            .product1{
+                display: block;
+                .swiper-wrapper{
+                    position: relative;
+                    padding: 15% 0;
+                    .swiper-slide{
+                        //display: inline-block;
+                        p{
+                            font-family: 'Binggrae';
+                            font-size: 26.25vw;
+                            font-weight: 700;
+                            letter-spacing: -0.5rem;
+                            color: #0b8249;
+                        }
+                        img{
+                            width: 34.66796875vw;
+                            position: absolute;
+                            left: 50%; top: 50%;
+                            transform: translate(-45%, -50%);
+                        }
+                    }
                 }
-                img{
-                    width: 35%;
-                    position: absolute;
-                    left: 50%; top: 50%;
-                    transform: translate(-45%, -50%);
+                .producttxt{
+                    padding: 3% 0 13%;
+                    p:nth-of-type(1){
+                        display:inline-block;
+                        font-family: 'Binggrae';
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        color: #0b8249;
+                    }
+                    p:nth-of-type(2){
+                        display: inline-block;
+                        font-family: 'Binggrae-Bold';
+                        font-size: 0.7rem;
+                        color: #0b8249;
+                    }
+                    p:nth-of-type(3){
+                        font-family: 'NotoSansKR';
+                        font-size: 0.75rem;
+                        color: #666666;
+                        margin-top: 1%;
+                    }
                 }
             }
-            .bananatxt{
-                padding: 3% 0 13%;
-                p:nth-of-type(1){
-                    display:inline-block;
-                    font-family: 'Binggrae';
-                    font-size: 0.9rem;
-                    font-weight: bold;
-                    color: #0b8249;
+            // .product1.active{
+            //     display: none;
+            // }
+            .product2{
+                display: none;
+                .swiper-wrapper{
+                    position: relative;
+                    padding: 15% 0;
+                    .swiper-slide{
+                        //display: inline-block;
+                        p{
+                            font-family: 'Binggrae';
+                            font-size: 26.25vw;
+                            font-weight: 700;
+                            letter-spacing: -0.5rem;
+                            color: #823b0b;
+                        }
+                        img{
+                            width: 34.66796875vw;
+                            position: absolute;
+                            left: 50%; top: 50%;
+                            transform: translate(-45%, -50%);
+                        }
+                    }
                 }
-                p:nth-of-type(2){
-                    display: inline-block;
-                    font-family: 'Binggrae-Bold';
-                    font-size: 0.7rem;
-                    color: #0b8249;
+                .producttxt{
+                    padding: 3% 0 13%;
+                    p:nth-of-type(1){
+                        display:inline-block;
+                        font-family: 'Binggrae';
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        color: #823b0b;
+                    }
+                    p:nth-of-type(2){
+                        display: inline-block;
+                        font-family: 'Binggrae-Bold';
+                        font-size: 0.7rem;
+                        color: #823b0b;
+                    }
+                    p:nth-of-type(3){
+                        font-family: 'NotoSansKR';
+                        font-size: 0.75rem;
+                        color: #666666;
+                        margin-top: 1%;
+                    }
                 }
-                p:nth-of-type(3){
-                    font-family: 'NotoSansKR';
-                    font-size: 0.75rem;
-                    color: #666666;
-                    margin-top: 1%;
+            }
+            .product2.active{
+                display: block;
+            }
+            .product3{
+                display: none;
+                .swiper-wrapper{
+                    position: relative;
+                    padding: 15% 0;
+                    .swiper-slide{
+                        //display: inline-block;
+                        p{
+                            font-family: 'Binggrae';
+                            font-size: 26.25vw;
+                            font-weight: 700;
+                            letter-spacing: -0.5rem;
+                            color: #7aba0a;
+                        }
+                        img{
+                            width: 34.66796875vw;
+                            position: absolute;
+                            left: 50%; top: 50%;
+                            transform: translate(-45%, -50%);
+                        }
+                    }
                 }
+                .producttxt{
+                    padding: 3% 0 13%;
+                    p:nth-of-type(1){
+                        display:inline-block;
+                        font-family: 'Binggrae';
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        color: #7aba0a;
+                    }
+                    p:nth-of-type(2){
+                        display: inline-block;
+                        font-family: 'Binggrae-Bold';
+                        font-size: 0.7rem;
+                        color: #7aba0a;
+                    }
+                    p:nth-of-type(3){
+                        font-family: 'NotoSansKR';
+                        font-size: 0.75rem;
+                        color: #666666;
+                        margin-top: 1%;
+                    }
+                }
+            }
+            .product3.active{
+                display: block;
+            }
+            .product4{
+                display: none;
+                .swiper-wrapper{
+                    position: relative;
+                    padding: 15% 0;
+                    .swiper-slide{
+                        //display: inline-block;
+                        p{
+                            font-family: 'Binggrae';
+                            font-size: 26.25vw;
+                            font-weight: 700;
+                            letter-spacing: -0.5rem;
+                            color: #f32539;
+                        }
+                        img{
+                            width: 34.66796875vw;
+                            position: absolute;
+                            left: 50%; top: 50%;
+                            transform: translate(-45%, -50%);
+                        }
+                    }
+                }
+                .producttxt{
+                    padding: 3% 0 13%;
+                    p:nth-of-type(1){
+                        display:inline-block;
+                        font-family: 'Binggrae';
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        color: #f32539;
+                    }
+                    p:nth-of-type(2){
+                        display: inline-block;
+                        font-family: 'Binggrae-Bold';
+                        font-size: 0.7rem;
+                        color: #f32539;
+                    }
+                    p:nth-of-type(3){
+                        font-family: 'NotoSansKR';
+                        font-size: 0.75rem;
+                        color: #666666;
+                        margin-top: 1%;
+                    }
+                }
+            }
+            .product4.active{
+                display: block;
+            }
+            .product5{
+                display: none;
+                .swiper-wrapper{
+                    position: relative;
+                    padding: 15% 0;
+                    .swiper-slide{
+                        //display: inline-block;
+                        p{
+                            font-family: 'Binggrae';
+                            font-size: 26.25vw;
+                            font-weight: 700;
+                            letter-spacing: -0.5rem;
+                            color: #ff6e2e;
+                        }
+                        img{
+                            width: 34.66796875vw;
+                            position: absolute;
+                            left: 50%; top: 50%;
+                            transform: translate(-45%, -50%);
+                        }
+                    }
+                }
+                .producttxt{
+                    padding: 3% 0 13%;
+                    p:nth-of-type(1){
+                        display:inline-block;
+                        font-family: 'Binggrae';
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        color: #ff6e2e;
+                    }
+                    p:nth-of-type(2){
+                        display: inline-block;
+                        font-family: 'Binggrae-Bold';
+                        font-size: 0.7rem;
+                        color: #ff6e2e;
+                    }
+                    p:nth-of-type(3){
+                        font-family: 'NotoSansKR';
+                        font-size: 0.75rem;
+                        color: #666666;
+                        margin-top: 1%;
+                    }
+                }
+            }
+            .product5.active{
+                display: block;
             }
         }
         .pr{
             width: 100%;
-            height: 100vh;
+            height: 840px;
             text-align: center;
             background: #ffec48;
             .prtxt{
@@ -269,20 +477,22 @@ main{
             }
             .slide_box{
                 position: relative;
-                overflow: hidden;
-                .slide_wrap{
-                    display: flex; //슬라이드 옆으로 정렬
-                    width: 1750px;
-                    li{
-                        margin: 20px;
+                overflow: hidden; 
+                width: 100%;
+                .swiper-wrapper{
+                    width: 100%;
+                    .swiper-slide{
+                        padding: 20px 30px; 
+                        width: 80%;
+                        flex-shrink: 0;
                         &:first-child{
-                            margin-left: 50px;
                         }
                         img{
-                            width: 275px;
+                            width: 100%;
+                            object-fit: cover;
                         }
                         .prtxt2{
-                            width: 275px;
+                            
                             background: #fff;
                             margin: 0 auto;
                             padding: 15px;
@@ -306,7 +516,7 @@ main{
                 font-family: 'NotoSansKR';
                 font-size: 12px;
                 display: inline-block;
-                padding: 35px 0;
+                padding: 5px 0;
                 font-weight: 600;
                 &:nth-of-type(1){
                     color: #ec1d25;
