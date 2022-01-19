@@ -210,9 +210,9 @@ main .whole .mainpage .visual p {
   bottom: 5%;
   color: #ffda14;
   font-family: 'Binggrae-Bold';
-  font-size: 10.625vw;
+  font-size: 80px;
   font-weight: 700;
-  line-height: 10.4687vw;
+  line-height: 80px;
   letter-spacing: -0.07em;
   text-align: right;
   text-transform: capitalize;
@@ -287,15 +287,15 @@ main .whole .product .productbtns {
 
 main .whole .product .productbtns .btn {
   display: inline-block;
-  width: 16.25vw;
-  height: 16.25vw;
+  width: 123px;
+  height: 123px;
   margin: 0 1%;
   color: #888;
   background: #e9e9e9;
   border: 1px solid #ccc;
   border-radius: 50%;
   font-family: 'NotoSansKR';
-  font-size: 3.5937vw;
+  font-size: 28px;
   vertical-align: middle;
 }
 
@@ -314,14 +314,14 @@ main .whole .product .product1 .swiper-wrapper {
 
 main .whole .product .product1 .swiper-wrapper .swiper-slide p {
   font-family: 'Binggrae';
-  font-size: 26.25vw;
+  font-size: 200px;
   font-weight: 700;
   letter-spacing: -0.5rem;
   color: #0b8249;
 }
 
 main .whole .product .product1 .swiper-wrapper .swiper-slide img {
-  width: 34.66796875vw;
+  width: 282px;
   position: absolute;
   left: 50%;
   top: 50%;
